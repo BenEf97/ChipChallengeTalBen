@@ -8,7 +8,7 @@ module ClockProject (clk, resetN,StartN, outSec ,outMin, outHour);
 	
 	//output reg Op1, Op2 ,Op3;//register saves it's previous value unless changed. For clock project temp removed
 
-	
+	//Ben was here
 //reg [7:0] rD1, rD2;
 
 	
