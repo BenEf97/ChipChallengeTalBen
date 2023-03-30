@@ -1,6 +1,6 @@
 <session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: 10M50DA(.|ES)/10M50DC (0x031050DD)" sof_file="../output_files/DE10_LITE_Golden_Top.sof">
   <display_tree gui_logging_enabled="0">
-    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
   </display_tree>
   <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
     <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
@@ -613,20 +613,20 @@
       <presentation>
         <unified_setup_data_view>
           <node is_selected="false" level-0="alt_or" name="Sec[5..0]" order="msb_to_lsb" type="combinatorial">
-            <node data_index="198" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[5]" storage_index="198" tap_mode="classic" trigger_index="198" type="unknown"/>
-            <node data_index="197" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[4]" storage_index="197" tap_mode="classic" trigger_index="197" type="unknown"/>
-            <node data_index="196" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[3]" storage_index="196" tap_mode="classic" trigger_index="196" type="unknown"/>
-            <node data_index="195" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[2]" storage_index="195" tap_mode="classic" trigger_index="195" type="unknown"/>
-            <node data_index="194" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[1]" storage_index="194" tap_mode="classic" trigger_index="194" type="unknown"/>
-            <node data_index="193" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[0]" storage_index="193" tap_mode="classic" trigger_index="193" type="unknown"/>
+            <node data_index="197" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[5]" storage_index="197" tap_mode="classic" trigger_index="197" type="unknown"/>
+            <node data_index="196" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[4]" storage_index="196" tap_mode="classic" trigger_index="196" type="unknown"/>
+            <node data_index="195" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[3]" storage_index="195" tap_mode="classic" trigger_index="195" type="unknown"/>
+            <node data_index="194" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[2]" storage_index="194" tap_mode="classic" trigger_index="194" type="unknown"/>
+            <node data_index="193" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[1]" storage_index="193" tap_mode="classic" trigger_index="193" type="unknown"/>
+            <node data_index="192" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Sec[0]" storage_index="192" tap_mode="classic" trigger_index="192" type="unknown"/>
           </node>
           <node is_selected="false" level-0="alt_or" name="Min[5..0]" order="msb_to_lsb" type="combinatorial">
-            <node data_index="192" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[5]" storage_index="192" tap_mode="classic" trigger_index="192" type="unknown"/>
-            <node data_index="191" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[4]" storage_index="191" tap_mode="classic" trigger_index="191" type="unknown"/>
-            <node data_index="190" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[3]" storage_index="190" tap_mode="classic" trigger_index="190" type="unknown"/>
-            <node data_index="189" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[2]" storage_index="189" tap_mode="classic" trigger_index="189" type="unknown"/>
-            <node data_index="188" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[1]" storage_index="188" tap_mode="classic" trigger_index="188" type="unknown"/>
-            <node data_index="187" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[0]" storage_index="187" tap_mode="classic" trigger_index="187" type="unknown"/>
+            <node data_index="191" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[5]" storage_index="191" tap_mode="classic" trigger_index="191" type="unknown"/>
+            <node data_index="190" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[4]" storage_index="190" tap_mode="classic" trigger_index="190" type="unknown"/>
+            <node data_index="189" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[3]" storage_index="189" tap_mode="classic" trigger_index="189" type="unknown"/>
+            <node data_index="188" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[2]" storage_index="188" tap_mode="classic" trigger_index="188" type="unknown"/>
+            <node data_index="187" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[1]" storage_index="187" tap_mode="classic" trigger_index="187" type="unknown"/>
+            <node data_index="186" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Min[0]" storage_index="186" tap_mode="classic" trigger_index="186" type="unknown"/>
           </node>
           <node is_selected="false" level-0="alt_or" name="Hour[4..0]" order="msb_to_lsb" state="collapse" type="combinatorial">
             <node data_index="183" duplicate_name_allowed="false" is_data_input="true" is_node_valid="false" is_selected="false" is_storage_input="true" is_trigger_input="true" name="Hour[4]" storage_index="183" tap_mode="classic" trigger_index="183" type="unknown"/>
@@ -706,7 +706,7 @@
             <node data_index="157" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|present_state[1]" storage_index="157" tap_mode="classic" trigger_index="157" type="unknown"/>
             <node data_index="146" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|present_state[0]" storage_index="146" tap_mode="classic" trigger_index="146" type="unknown"/>
           </node>
-          <node data_index="178" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|resetN" storage_index="178" tap_mode="classic" trigger_index="178" type="unknown"/>
+          <node data_index="178" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="falling edge" name="ClockProject:Clock|resetN" storage_index="178" tap_mode="classic" trigger_index="178" type="unknown"/>
           <node is_selected="false" level-0="alt_or" name="ClockProject:Clock|HourCounter[31..0]" order="msb_to_lsb" radix="unsigned_dec" type="register">
             <node data_index="24" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|HourCounter[31]" storage_index="24" tap_mode="classic" trigger_index="24" type="unknown"/>
             <node data_index="23" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|HourCounter[30]" storage_index="23" tap_mode="classic" trigger_index="23" type="unknown"/>
@@ -928,7 +928,7 @@
             <net data_index="157" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|present_state[1]" storage_index="157" tap_mode="classic" trigger_index="157" type="unknown"/>
             <net data_index="146" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|present_state[0]" storage_index="146" tap_mode="classic" trigger_index="146" type="unknown"/>
           </bus>
-          <net data_index="178" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|resetN" storage_index="178" tap_mode="classic" trigger_index="178" type="unknown"/>
+          <net data_index="178" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="falling edge" name="ClockProject:Clock|resetN" storage_index="178" tap_mode="classic" trigger_index="178" type="unknown"/>
           <bus is_selected="false" level-0="alt_or" name="ClockProject:Clock|HourCounter[31..0]" order="msb_to_lsb" radix="unsigned_dec" type="register">
             <net data_index="24" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|HourCounter[31]" storage_index="24" tap_mode="classic" trigger_index="24" type="unknown"/>
             <net data_index="23" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|HourCounter[30]" storage_index="23" tap_mode="classic" trigger_index="23" type="unknown"/>
@@ -1150,7 +1150,7 @@
             <net data_index="157" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|present_state[1]" storage_index="157" tap_mode="classic" trigger_index="157" type="unknown"/>
             <net data_index="146" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|present_state[0]" storage_index="146" tap_mode="classic" trigger_index="146" type="unknown"/>
           </bus>
-          <net data_index="178" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|resetN" storage_index="178" tap_mode="classic" trigger_index="178" type="unknown"/>
+          <net data_index="178" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="falling edge" name="ClockProject:Clock|resetN" storage_index="178" tap_mode="classic" trigger_index="178" type="unknown"/>
           <bus is_selected="false" level-0="alt_or" name="ClockProject:Clock|HourCounter[31..0]" order="msb_to_lsb" radix="unsigned_dec" type="register">
             <net data_index="24" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|HourCounter[31]" storage_index="24" tap_mode="classic" trigger_index="24" type="unknown"/>
             <net data_index="23" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" name="ClockProject:Clock|HourCounter[30]" storage_index="23" tap_mode="classic" trigger_index="23" type="unknown"/>
@@ -1280,11 +1280,13 @@
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="F5FBD755" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2023/03/30 11:04:33  #1" position="center" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="F5FBD755" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2023/03/30 11:11:03  #0" position="center" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
-          <level enabled="yes" name="condition1" type="basic"><power_up enabled="yes">
-            </power_up><op_node/>
+          <level enabled="yes" name="condition1" type="basic">'ClockProject:Clock|resetN' == falling edge
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
           </level>
         </events>
         <storage_qualifier_events>
@@ -1310,9 +1312,15 @@
       </trigger>
     </signal_set>
     <position_info>
-      <single attribute="active tab" value="1"/>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
       <single attribute="setup horizontal scroll position" value="0"/>
       <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="122880"/>
     </position_info>
   </instance>
   <mnemonics/>
