@@ -19,7 +19,7 @@ localparam minProg_state = 2; //Progressing the minutes
 localparam hourProg_state = 3; //Progressing 
 
 //Define the clock cycles duration of each state.
-localparam sec_timeP=50_000_000; //1 sec
+localparam sec_timeP=5; //1 sec
 //localparam min_timeP=sec_timeP*60; //1 min
 //localparam hour_timeP=min_timeP*60; //1 hour
 
