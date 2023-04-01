@@ -59,7 +59,25 @@ module DE10_LITE_Golden_Top(
 	inout 		          		ARDUINO_RESET_N,
 
 	//////////// GPIO, GPIO connect to GPIO Default //////////
-	inout 		    [35:0]		GPIO
+	inout 		    [35:0]		GPIO,
+	
+	
+	
+	//debug- these are temporary outputs for the waveflow.
+	//debug state machine
+	output tempCarryOverOut,
+	output [31:0] tempCountOut,
+	
+	//debug sec increase
+	output [5:0] tempSecOut,
+	output tempcarryoversec,
+	
+	//debug min increase
+	output [5:0] tempMinOut,
+	output tempcarryoverMin,
+	
+	//debug hour increase
+	output [4:0] tempHourOut
 );
 
 
@@ -68,52 +86,56 @@ module DE10_LITE_Golden_Top(
 //  REG/WIRE declarations
 //=======================================================
 
+//CarryOver wire from the state machine. Whenever it finishes a cycle, carryOver==1.
+wire carryOver;
 
-wire [5:0] Sec; //Wire 0 to 60
-wire [5:0] Min; //Wire 0 to 60
-wire [4:0] Hour; //Wire 0 to 24
+//Wire for seconds
+wire [5:0] SecWire;
 
+//Wire for carryover seconds, forward to minutes.
+wire carryOverSec;
+
+//wire for minutes
+wire [5:0] MinWire;
+
+//wire for carryover minutes, forward to hours.
+wire carryOverMin;
+
+//Wire for hours
+wire [4:0] HourWire;
+
+//temporary count wire for debug.
+wire [31:0] tempCountWire;
 
 //=======================================================
 //  Structural coding
 //=======================================================
 
+//Notes: after turnning back on enable there is a delay of 1 cycle. need to check it.	
+StateMachine sm(.clk(MAX10_CLK1_50), .resetN(KEY[0]), .enable(SW[0]), .cnt(tempCountWire),.ovflw(carryOver));
 
 
-//========CLOCK======
-ClockProject Clock(.clk(MAX10_CLK1_50), .resetN(KEY[0]), .StartN(KEY[1]), .outSec(Sec) , .outMin(Min), .outHour(Hour));
+//Sec increase
+SecIncrease SecIn(.CarryInSec(carryOver), .OutSec(SecWire), .ovflwSec(carryOverSec));
+
+//Min increase
+MinIncrease MinIn(.CarryInMin(carryOverSec), .OutMin(MinWire), .ovflwMin(carryOverMin));
+
+//Hour Increase
+HourIncrease HourIn(.CarryInHour(carryOverMin), .OutHour(HourWire));
 
 
-
-//=====7 Segment====
-
-//Seconds display
-
-//Units display
-HEXDRV HEXDRV0 (.switch((Sec%10)),.segments(HEX0));
-
-//Tens display
-HEXDRV HEXDRV1 (.switch(((Sec/10)%10)),.segments(HEX1));
+//HEXDRV HEXDRV0(.switch(SecWire[3:0]),.segments(HEX0));
 
 
-//Minutes display
-
-//Units display
-HEXDRV HEXDRV2 (.switch((Min%10)),.segments(HEX2));
-
-//Tens display
-HEXDRV HEXDRV3 (.switch(((Min/10)%10)),.segments(HEX3));
-
-
-//Hours display
-
-//Units display
-HEXDRV HEXDRV4 (.switch((Hour%10)),.segments(HEX4));
-
-//Tens display
-HEXDRV HEXDRV5 (.switch(((Hour/10)%10)),.segments(HEX5));
-
-
+//debugging the outputs
+assign tempCarryOverOut = carryOver;
+assign tempCountOut = tempCountWire;
+assign tempSecOut = SecWire;
+assign tempcarryoversec = carryOverSec;
+assign tempMinOut = MinWire;
+assign tempcarryoverMin = carryOverMin;
+assign tempHourOut = HourWire;
 
 //assign LEDR[0] = ~(SW[0] & SW[1]);
 //assign LEDR[1] = ~KEY[0] | ~KEY[1] ;

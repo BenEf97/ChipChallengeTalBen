@@ -1,16 +1,12 @@
 module ClockProject (clk, resetN,StartN, outSec ,outMin, outHour);
 	input clk, resetN,StartN;
-//	input [7:0] Din1 ,Din2;
-	output reg [5:0] outSec; //0 to 60
-	output reg [5:0] outMin; // 0 to 60
-	output reg [4:0] outHour; //0 to 24
+	output [5:0] outSec; //0 to 60
+	output [5:0] outMin; // 0 to 60
+	output [4:0] outHour; //0 to 24
 
 	
-	//output reg Op1, Op2 ,Op3;//register saves it's previous value unless changed. For clock project temp removed
-
-	//Ben was here
-//reg [7:0] rD1, rD2;
-
+	//do to- try with assign, wires
+	
 	
 //Define the 4 states of the Traffic lights. used as parameters.
 localparam reset_state = 0; //00:00:00
@@ -19,16 +15,22 @@ localparam minProg_state = 2; //Progressing the minutes
 localparam hourProg_state = 3; //Progressing 
 
 //Define the clock cycles duration of each state.
+<<<<<<< HEAD
 localparam sec_timeP=5; //1 sec
 //localparam min_timeP=sec_timeP*60; //1 min
 //localparam hour_timeP=min_timeP*60; //1 hour
 
+=======
+//localparam sec_timeP=50_000_000; //1 sec
+localparam sec_timeP=1; //1 sec
+>>>>>>> Merge-attempt
 
 
 //Define the state and counter variables.
 integer present_state, next_state;
 integer present_counter, next_counter; //Counter for the time period
-integer SecCounter,MinCounter, HourCounter; //Seperate counter
+wire  SecCounter,MinCounter, HourCounter; //Seperate counter
+
 
 //Implementation of the asynchronous and the synchronous processes.
 always @ (posedge clk or negedge resetN)
@@ -46,6 +48,8 @@ always @ (posedge clk or negedge resetN)
 	present_counter <= next_counter;
 	end
 end
+
+
 
 //Combinatorical logic to set the next state and next counter values
 always 
@@ -100,51 +104,37 @@ always
 	endcase
 	end
 
+	
 
 //Combinatorical logic to set the output lights
 always
 	begin 
 	
-	//Default values, set to be off.
-	//Op1 = 1'b0;
-	//Op2 = 1'b0;
-	//Op3 = 1'b0;
-	
 	case (present_state)
 		
 		reset_state: begin
-			outSec <= 0;
-			outMin <= 0;
-			outHour <=0;
+			outSec = 0;
+			outMin = 0;
+			outHour =0;
 		end
 		
 		secProg_state: begin //Increasing seconds
 			
-			//Op1 = 1'b1;
-			outSec <= SecCounter;
+			outSec = SecCounter;
 				
-			//Display number on led
-
 		end
 		
 		minProg_state: begin //Increasing minutes
 			
-			//Op2 = 1'b1;
-			outMin<=MinCounter;
-				
-			//Display number on led
-			//HEXDRV HEXDRV2 =(.switch(outMin%10)),.segments(HEX2)); //Right digit
-			//HEXDRV HEXDRV3 =(.switch((outMin/10))),.segments(HEX3)); //ten's digit		
+
+			outMin=MinCounter;
+	
 		end
 		
-		hourProg_state: begin
-			//Op3 = 1'b1;
-			outHour<=HourCounter;
-				
-			//Display number on led
-			//HEXDRV HEXDRV4 =(.switch(outHour%10)),.segments(HEX4)); //Right digit
-			//HEXDRV HEXDRV5 =(.switch((outHour/10))),.segments(HEX5)); //ten's digit			
-			
+		hourProg_state: begin //Increasing hours
+		
+			outHour=HourCounter;
+
 		end
 	endcase
 end
