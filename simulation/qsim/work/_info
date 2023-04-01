@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IntelProj/simulation/qsim
+vDE10_LITE_Golden_Top
+Z1 !s110 1680266993
+!i10b 1
+!s100 fGLZ6`<Fo?VDRAcMPj0<=3
+IzaP_[PI1_7ZYzYK8mM7692
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1680266993
+Z4 8DE10_LITE_Golden_Top.vo
+Z5 FDE10_LITE_Golden_Top.vo
+Z6 L0 32
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1680266993.000000
+Z9 !s107 DE10_LITE_Golden_Top.vo|
+Z10 !s90 -work|work|DE10_LITE_Golden_Top.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@d@e10_@l@i@t@e_@golden_@top
+vDE10_LITE_Golden_Top_vlg_vec_tst
+!s110 1680266994
+!i10b 1
+!s100 @ETK<An7ERBf>io;AjULK3
+IY^^`VfbRg0_AcV2bR[LBa0
+R2
+R0
+w1680266992
+Z13 8Waveform.vwf.vt
+Z14 FWaveform.vwf.vt
+Z15 L0 30
+R7
+r1
+!s85 0
+31
+!s108 1680266994.000000
+!s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@d@e10_@l@i@t@e_@golden_@top_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 Z98=NBi1R:QXzK;^N]TIW2
+IT8Cn7kGW@82i51PgPWk5H1
+R2
+R0
+R3
+R4
+R5
+L0 7815
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vStateMachine
+Z17 !s110 1680258469
+!i10b 1
+!s100 2Jda>XAln?;6`Se8O_Z=`0
+IzcWcVJP0V@WWKd_?kOGDj3
+R2
+R0
+w1680258468
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z18 !s108 1680258469.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@state@machine
+vStateMachine_vlg_vec_tst
+R17
+!i10b 1
+!s100 NAJ3CiTD1?ODJPnoEk6S[2
+IVU7KK=]FH:WIBIcXY`iS13
+R2
+R0
+w1680258467
+R13
+R14
+R15
+R7
+r1
+!s85 0
+31
+R18
+!s107 Waveform.vwf.vt|
+R16
+!i113 1
+R11
+R12
+n@state@machine_vlg_vec_tst

@@ -1,0 +1,229 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tempCarryOverOut",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[8]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[9]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[10]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[11]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[12]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[13]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[14]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[15]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[16]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[17]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[18]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[19]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[20]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[21]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[22]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[23]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[24]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[25]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[26]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[27]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[28]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[29]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[30]",
+					"strict" : false
+				},
+				{
+					"name" : "tempCountOut[31]",
+					"strict" : false
+				},
+				{
+					"name" : "tempSecOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tempSecOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tempSecOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tempSecOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tempSecOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tempSecOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tempcarryoversec",
+					"strict" : false
+				},
+				{
+					"name" : "tempMinOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tempMinOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tempMinOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tempMinOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tempMinOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tempMinOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tempcarryoverMin",
+					"strict" : false
+				},
+				{
+					"name" : "tempHourOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tempHourOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tempHourOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tempHourOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tempHourOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MAX10_CLK1_50",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
